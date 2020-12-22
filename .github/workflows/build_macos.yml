@@ -2,6 +2,9 @@ name: Build (macOS)
 
 on: [push, pull_request]
 
+env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
 jobs:
   macOS:
     runs-on: macOS-latest
