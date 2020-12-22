@@ -41,6 +41,8 @@ jobs:
         pacman -U msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz --noconfirm
         pacman -Syu --noconfirm
         "@
+        taskkill /IM "dirmnger.exe" /F
+        taskkill /IM "gpg-agent.exe" /F
     - name: Initialize Compiler Cache
       id: cache
       uses: actions/cache@v1
